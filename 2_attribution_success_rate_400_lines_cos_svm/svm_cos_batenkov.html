@@ -1,0 +1,138 @@
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>chart</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script></head>
+
+<body>
+
+<div id="container1" style="width:700px; height:400px; margin: 0 auto"></div>
+
+<script>
+
+Highcharts.chart("container1",
+{
+  subtitle: {
+    text: ""
+  },
+  title: {
+    text: ""
+  },
+  legend: {
+    enabled: true
+  },
+  credits: {
+    enabled: false
+  },
+  series: [
+    {
+		name: 'lemma',
+		data: [
+        [
+          0.64,
+          0.76,
+          0.8,
+          0.835,
+          0.98
+        ],
+        [
+          0.64,
+          0.7,
+          0.74,
+          0.7950000000000002,
+          0.88
+        ],
+	]	
+    },
+    {
+		name: 'ngram',
+		data: [
+        [
+          0.64,
+          0.8,
+          0.82,
+          0.88,
+          0.94
+        ],
+        [
+          0.62,
+          0.68,
+          0.72,
+          0.76,
+          0.82
+        ],
+
+	]	
+    },
+    {
+		name: 'sticho',
+		data: [
+        [
+          0.4,
+          0.54,
+          0.5700000000000001,
+          0.635,
+          0.76
+        ],
+        [
+          0.32,
+          0.38,
+          0.43,
+          0.46,
+          0.7
+        ],
+
+	]	
+    },
+    {
+		name: 'lemma ∪ ngram ∪ sticho',
+		data: [
+        [
+          0.78,
+          0.845,
+          0.88,
+          0.915,
+          0.96
+        ],
+        [
+          0.68,
+          0.76,
+          0.78,
+          0.84,
+          0.92
+        ]
+
+
+	]	
+	}
+  ],
+  xAxis: {
+    max: null,
+    title: {
+      text: ""
+    },
+    categories: [
+      "SVM",
+      "Δ(cos)",
+      "Δ(L1)",
+	  "Δ(L2)",
+    ],
+    min: null
+  },
+  yAxis: {
+    max: 1,
+    gridLineWidth: 0,
+    title: {
+      text: ""
+    },
+    min: 0,
+  },
+  chart: {
+    type: "boxplot"
+  }
+}
+);
+
+</script></body>
