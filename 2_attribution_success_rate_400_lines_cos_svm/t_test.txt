@@ -1,0 +1,10 @@
+==================== cosine
+lemma ngram 0.114129418236
+lemma sticho 5.74178671378e-15
+lemma comb 0.00165079353879
+ngram sticho 1.57488185961e-16
+==================== svm
+lemma ngram 0.0642146818831
+lemma sticho 1.99111051994e-13
+lemma comb 6.54440759266e-07
+ngram sticho 1.60471675413e-14
